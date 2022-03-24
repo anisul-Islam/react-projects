@@ -26,7 +26,15 @@ const Home = () => {
     <div className={style.container}>
       <h1 style={{ color: "white" }}>Todo App</h1>
       <NewTodo onAddTodo={handleAddTodo} />
-      <Todos todos={todos} onRemoveTodo={handleRemoveTodo} />
+      {todos && <Todos todos={todos} onRemoveTodo={handleRemoveTodo} />}
+      <button
+        className={style.btn}
+        onClick={() => {
+          setTodos([]);
+        }}
+      >
+        Clear All todos
+      </button>
     </div>
   );
 };
