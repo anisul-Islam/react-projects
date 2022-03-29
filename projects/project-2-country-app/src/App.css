@@ -1,0 +1,13 @@
+input {
+  padding: 0.6rem;
+  border-radius: 0.6rem;
+  width: 20rem;
+  font-size: 1.2rem;
+}
+input:focus {
+  background-color: bisque;
+}
+h1 {
+  text-align: center;
+  font-size: 3rem;
+}
